@@ -11,7 +11,16 @@ public class StringExample {
 		String s2= "sdpsrh";
 		System.out.println(s2);
 
-		
+        if (s1.equalsIgnoreCase(s2)) {
+            System.out.println("same values");
+
+        }
+
+        int distance = s1.compareTo("adpsrh");
+        System.out.println("distance: "+distance);
+
+
+		/*
 		String s3 = "sdp2023";
 		String s4 = s3.replace("23", "24");
 		System.out.println(s4);
@@ -27,7 +36,7 @@ public class StringExample {
 		if (s == "Sachin") {
 			System.out.println(s+" is Sachin");
 		}
-		
+		*/
 	}
 	
 	
