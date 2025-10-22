@@ -3,21 +3,20 @@ package basic;
 public class StringExample {
 
 	public static void main(String[] args) {
-		
-		char[] ch={'s','d','p','s','r','h'};
-		String s1 = new String(ch);
-		System.out.println(s1);
-		
-		String s2= "sdpsrh";
-		System.out.println(s2);
 
+        char[] ch = {'s', 'd', 'p', 's', 'r', 'h'};
+        String s1 = new String(ch);
+        System.out.println(s1);
+
+        // Test as comment
+        String s2 = "sdpsrh";
+        System.out.println(s2);
         if (s1.equalsIgnoreCase(s2)) {
             System.out.println("same values");
-
         }
 
         int distance = s1.compareTo("adpsrh");
-        System.out.println("distance: "+distance);
+        System.out.println("distance: " + distance);
 
 
 		/*
@@ -37,7 +36,5 @@ public class StringExample {
 			System.out.println(s+" is Sachin");
 		}
 		*/
-	}
-	
-	
+    }
 }

@@ -3,10 +3,11 @@ package automotive;
 public class MyCarsExample {
 
 	public static void main(String[] args) {
+        /*
 		Truck t = new Truck();
 		t.setCapacity(5);
 		LoadingArea la = new Truck();
-						
+		*/
 		System.out.println(Car.amountofCreatedCars);
 		Car theTesla = createMyTesla();
 		theTesla.getProductionYear();
@@ -14,7 +15,7 @@ public class MyCarsExample {
 		theTesla.printBrand();
 		
 		System.out.println(Car.amountofCreatedCars);
-		
+		/*
 		Car tesla2 = createMyTesla();
 		
 		
@@ -54,7 +55,7 @@ public class MyCarsExample {
 		theBeetle.accelerate(10);
 		theBeetle.brake(5);
 		System.out.println(theBeetle.getSpeed());
-		
+		*/
 	}	
 	
 	public static Car createMyTesla() {
