@@ -1,4 +1,19 @@
 -- ==========================
+-- Database Entities and Example Data
+-- ==========================
+-- This script inserts example data for CourseOfStudies and Student tables.
+-- Each course of studies receives 10 example students.
+--
+-- Table: CourseOfStudies
+--   Columns: id (UUID, PK), name (VARCHAR), description (TEXT)
+-- Table: Student
+--   Columns: id (UUID, PK), firstName (VARCHAR), lastName (VARCHAR), city (VARCHAR), courseOfStudies_id (UUID, FK)
+--
+-- Usage:
+--   Run this script after creating the tables to populate them with sample data.
+--   The courseOfStudies_id in Student is set using a subquery to match the correct course.
+
+-- ==========================
 -- Insert CourseOfStudies
 -- ==========================
 INSERT INTO CourseOfStudies (name, description)
