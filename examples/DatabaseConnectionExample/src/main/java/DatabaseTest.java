@@ -69,7 +69,5 @@ public class DatabaseTest {
         // Example: Delete courses by their UUID (replace with actual UUIDs from your database)
         //dbc.deleteCourse(UUID.fromString("5a23e58a-3db8-4942-838f-bf0f2bc856fa"));
         //dbc.deleteCourse(UUID.fromString("d0b88794-b21a-4c04-800c-5bb84f69e1cb"));
-
-
     }
 }
