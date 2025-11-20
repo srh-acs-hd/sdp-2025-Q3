@@ -1,4 +1,5 @@
 package ui;
+import data.CourseOfStudies;
 import db.DBHandler;
 
 import java.util.ArrayList;
@@ -41,17 +42,20 @@ public class SRHApplication extends JFrame implements ChangeListener {
         tabbedPane.add("Courses", coursePanel);
         tabbedPane.add("Students", studentsPanel);
         // add an event listener (this class) to react on choosing a tab
-        tabbedPane.addChangeListener(this);
+        //tabbedPane.addChangeListener(this);
         // load and display the person list
         this.loadAndDisplayData();
     }
 
     public void loadAndDisplayData() {
         // loads the data from the database
-        DBHandler dbh = new DBHandler();
-        //ArrayList<Person> personsFromDB = dbh.readPersons();
-        // displays the person on the panel
-        //personListPanel.showPersons(personsFromDB);
+        // Create a DBHandler instance to perform database operations
+        DBHandler dbc = new DBHandler();
+
+        // Read all courses from the database and print their IDs and names
+        ArrayList<CourseOfStudies> courses = dbc.readCourses();
+        this.coursePanel.displayCourses(courses);
+
     }
 
     @Override
